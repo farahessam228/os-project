@@ -22,7 +22,7 @@ The project also includes:
 This scenario demonstrates a mixed set of processes with different arrival times, burst times, and priorities to test the behavior of both SRTF and Priority Scheduling algorithms.
 
 ### Step 1 — Load Scenario
-![Load Scenario](screenshots/basic-mixed-1.png)
+![Load Scenario](https://raw.githubusercontent.com/farahessam228/os-project/main/OS/screenshots/basic-mixed-1.png)
 
 ### Step 2 — Gantt Chart
-![Gantt Chart](screenshots/basic-mixed-2.png)
+![Gantt Chart](https://raw.githubusercontent.com/farahessam228/os-project/main/OS/screenshots/basic-mixed-2.png)
