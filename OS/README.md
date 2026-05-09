@@ -27,3 +27,24 @@ This scenario demonstrates a mixed set of processes with different arrival times
 ### Step 2 — Gantt Chart
 ![Gantt Chart](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/basic-mixed-2.png)
 
+### Step 3 — Scheduling Result
+![Scheduling Result](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/basic-mixed-3.png)
+
+### Step 4 — Comprasion Summary && Final Conclusion 
+![Comprasion Summary && Final Conclusion](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/basic-mixed-4.png)
+
+### Scenario 2 - Priority vs. Burst Conflict
+This scenario contains 4 processes designed to create a direct conflict between priority levels and burst times across both scheduling algorithms.
+
+### Step 1 — Load Scenario
+![Load Scenario](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/priority-vs-burst-conflict-1.png)
+
+### Step 2 — Gantt Chart
+![Gantt Chart](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/priority-vs-burst-conflict-2.png)
+
+### Step 3 — Scheduling Result
+![Scheduling Result](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/priority-vs-burst-conflict-3.png)
+
+### Step 4 — Comprasion Summary && Final Conclusion 
+![Comprasion Summary && Final Conclusion](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/priority-vs-burst-conflict-4.png)
+
