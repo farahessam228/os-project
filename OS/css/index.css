@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  font-family: "Syne", sans-serif;
+  color: white;
+}
+
+.container {
+  margin: auto;
+  padding: 0 24px;
+  width: 85%;
+}
+
+.header {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid #2a2a3a;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 52px;
+  font-weight: 800;
+  text-align: center;
+  color: goldenrod;
+}
+
+.p1 {
+  color: #7c6cfc;
+}
+
+.s1 {
+  color: #fc6c8f;
+}
+
+.section-title {
+  font-size: 17px;
+  font-family: "Space Mono", monospace;
+  color: #6cfccc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rule-note {
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  color: #6cfccc;
+  padding: 8px 14px;
+  background: rgba(108, 252, 204, 0.06);
+  border-left: 3px solid #6cfccc;
+  margin-bottom: 16px;
+}
+
+.load {
+  font-size: 11px;
+  font-family: "Space Mono", monospace;
+  color: #6a6a8a;
+  margin-right: 4px;
+  align-self: center;
+}
+
+.scenarios {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.scenario-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #2a2a3a;
+  background: #111118;
+  color: #6a6a8a;
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.scenario-btn:hover {
+  border-color: #6cfccc;
+  color: #6cfccc;
+}
+
+.card {
+  background: #16161f;
+  border: 1px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  font-family: "Space Mono", monospace;
+  color: #6a6a8a;
+  margin-bottom: 6px;
+}
+
+.field input {
+  width: 100%;
+  background: #111118;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #7c6cfc;
+}
+
+.btn-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add {
+  background: transparent;
+  color: #7c6cfc;
+  border: 1px solid #7c6cfc;
+  padding: 10px 26px;
+}
+.btn-add:hover {
+  background: rgba(124, 108, 252, 0.3);
+}
+
+.btn-clear {
+  background: transparent;
+  color: #6a6a8a;
+  border: 1px solid #2a2a3a;
+}
+.btn-clear:hover {
+  border-color: #fc6c6c;
+  color: #fc6c6c;
+}
+
+.error-msg {
+  background: rgba(252, 108, 108, 0.1);
+  border: 1px solid #fc6c6c;
+  color: #fc6c6c;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-family: "Space Mono", monospace;
+  margin-top: 12px;
+  display: none;
+}
+.error-msg.show {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  color: #6a6a8a;
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #2a2a3a;
+}
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(42, 42, 58, 0.5);
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.remove-btn {
+  background: none;
+  border: 1px solid #6a6a8a;
+  border-radius: 8px;
+  color: #6a6a8a;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+  padding: 2px 6px;
+}
+.remove-btn:hover {
+  color: #fc6c6c;
+  border-color: #fc6c6c;
+}
+
+.btn-run {
+  background: transparent;
+  color: #fc6c8f;
+  border: 1px solid #fc6c8f;
+  padding: 12px 32px;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.btn-run:hover {
+  background: rgba(255, 147, 181, 0.315);
+}
+
+.results-section {
+  display: none;
+}
+.results-section.show {
+  display: block;
+}
+
+.algo-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.gantt {
+  padding-top: 25px;
+}
+
+.bottom {
+  border-top: 1px solid #2a2a3a;
+}
+
+.gantt-wrap {
+  padding-bottom: 30px;
+  position: relative;
+  overflow-x: auto;
+}
+
+.gantt-row {
+  display: flex;
+  padding-top: 40px;
+  margin-bottom: 4px;
+}
+
+.gantt-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border-radius: 6px;
+  height: 50px;
+  margin-right: 2px;
+  transition: opacity 0.2s;
+  background: black;
+  border: 1px solid #2a2a3a;
+  color: white;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.gantt-block:hover {
+  opacity: 0.8;
+}
+
+.gantt-times {
+  display: flex;
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  color: #6a6a8a;
+  margin-top: 4px;
+  padding-left: 0px;
+  position: relative;
+  height: 20px;
+}
+
+.dual-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.avg-row td {
+  background: rgba(255, 255, 255, 0.03);
+  font-weight: 700;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 24px;
+}
+
+.compare-card {
+  background: #111118;
+  border: 1px solid #2a2a3a;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+
+.compare-card .metric {
+  font-size: 11px;
+  font-family: "Space Mono", monospace;
+  color: #6a6a8a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.compare-card .winner {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.compare-card .vals {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  color: #6a6a8a;
+}
+
+.tie {
+  color: #6cfccc;
+}
+
+.conclusion-box {
+  background: #111118;
+  border: 1px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 28px;
+}
+.conclusion-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  opacity: 0.85;
+}
+.conclusion-box p:last-child {
+  margin-bottom: 0;
+}

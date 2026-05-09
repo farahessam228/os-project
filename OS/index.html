@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priority vs SRTF</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          <span class="p1">Priority</span> VS <span class="s1">SRTF</span>
+        </h1>
+      </div>
+
+      <div class="card">
+        <div class="section-title">INPUT PANEL</div>
+        <div class="rule-note">
+          Priority Rule: Lower number = Higher priority (1 = Highest).
+          Tie-breaking: lower Arrival Time first, then lower Process ID first.
+        </div>
+        <div class="scenarios">
+          <span class="load">LOAD SCENARIO:</span>
+          <button class="scenario-btn" onclick="loadScenario('A')">
+            A — Basic Mixed
+          </button>
+          <button class="scenario-btn" onclick="loadScenario('B')">
+            B — Priority vs Burst Conflict
+          </button>
+          <button class="scenario-btn" onclick="loadScenario('C')">
+            C — Starvation Risk
+          </button>
+          <button class="scenario-btn" onclick="loadScenario('D')">
+            D — Validation Test
+          </button>
+        </div>
+
+        <div class="input-grid">
+          <div class="field">
+            <label for="pid">PROCESS ID</label>
+            <input type="text" id="pid" />
+          </div>
+          <div class="field">
+            <label for="at">ARRIVAL TIME</label>
+            <input type="number" id="at" />
+          </div>
+          <div class="field">
+            <label for="bt">BURST TIME</label>
+            <input type="number" id="bt" />
+          </div>
+          <div class="field">
+            <label for="pr">PRIORITY</label>
+            <input type="number" id="pr" />
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-add" onclick="addProcess()">
+            + Add Process
+          </button>
+          <button class="btn btn-clear" onclick="clearAll()">Clear All</button>
+        </div>
+        <div class="error-msg" id="error-msg"></div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">PROCCESS TABLE</div>
+        <div class="table-wrap">
+          <table id="process-table">
+            <thead>
+              <tr>
+                <th>PROCESS ID</th>
+                <th>ARRIVAL TIME</th>
+                <th>BURST TIME</th>
+                <th>PRIORITY</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-run" onclick="runSimulation()">
+            Simulate
+          </button>
+        </div>
+      </div>
+
+      <div class="results-section" id="results-section">
+        <div class="card">
+          <div class="section-title">GANTT CHARTS</div>
+          <div>
+            <div class="gantt">
+              <div class="algo-title p1">Priority Scheduling</div>
+              <div class="gantt-wrap" id="gantt-priority"></div>
+            </div>
+            <div class="gantt bottom">
+              <div class="algo-title s1">SRTF</div>
+              <div class="gantt-wrap" id="gantt-srtf"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <div class="card">
+            <div class="algo-title p1">Priority | Results</div>
+            <div class="table-wrap">
+              <table id="results-priority"></table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="algo-title s1">SRTF | Results</div>
+            <div class="table-wrap">
+              <table id="results-srtf"></table>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">COMPARISON SUMMARY</div>
+          <div class="compare-grid" id="compare-grid"></div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">FINAL CONCLUSION</div>
+          <div class="conclusion-box" id="conclusion-box"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
