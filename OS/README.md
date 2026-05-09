@@ -48,3 +48,34 @@ This scenario contains 4 processes designed to create a direct conflict between 
 ### Step 4 — Comprasion Summary && Final Conclusion 
 ![Comprasion Summary && Final Conclusion](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/priority-vs-burst-conflict-4.png)
 
+### Scenario 3 - Starvation Risk 
+This scenario contains 4 processes where three of them share the same priority, designed to show how a low-priority process can be starved and never get CPU time.
+
+### Step 1 — Load Scenario
+![Load Scenario](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/starvation-risk-1.png)
+
+
+### Step 2 — Gantt Chart
+![Gantt Chart](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/starvation-risk-2.png)
+
+### Step 3 — Scheduling Result
+![Scheduling Result](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/starvation-risk-3.png)
+
+### Step 4 — Comprasion Summary && Final Conclusion 
+![Comprasion Summary && Final Conclusion](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/starvation-risk-4.png)
+
+### Validation Test
+#  Missing Required Field
+![ Missing Required Field](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/validation-test-1.png)
+![ Missing Required Field](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/validation-test-4.png)
+
+
+# Arrival time cannot be negative
+![Arrival Time Cannot Be Negative](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/validation-test-2.png)
+
+# Burst time must be greater than 0
+![Burst Time Must Be Greater Than 0](https://raw.githubusercontent.com/farahessam228/os-project/master/OS/screenshots/validation-test-3.png)
+
+
+
+
